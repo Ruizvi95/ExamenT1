@@ -11,6 +11,8 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.control.Tooltip;
+import javafx.scene.effect.GaussianBlur;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Font;
@@ -19,9 +21,8 @@ import javafx.scene.text.Font;
  * 
  * @author ruizv
  * @version 1.0
- * @see ControlFX
+ * @see application.view.ControlFX
  * 
- * En esta aplicacion 
  */
 
 
@@ -35,6 +36,7 @@ public class MainFX extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/view/Profile.fxml"));
+		
 		
 		try {
 			mypane = (AnchorPane) loader.load();
@@ -60,4 +62,6 @@ public class MainFX extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
+	
+
 }

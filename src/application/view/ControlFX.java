@@ -30,7 +30,8 @@ public class ControlFX {
 	
 	public void initialize() {
 		
-		
+//		Tooltip tooltip = new Tooltip("“Do you know me?");
+//		boton.setTooltip(tooltip);
 		
 		
 		FadeTransition fadeTransition = new FadeTransition(
