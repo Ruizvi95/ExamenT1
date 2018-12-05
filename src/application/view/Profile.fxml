@@ -3,7 +3,6 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.effect.SepiaTone?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -31,7 +30,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fitHeight="128.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <ImageView fx:id="imagen" fitHeight="128.0" fitWidth="134.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@../view/assets/profilephoto.png" />
                      </image>
@@ -52,10 +51,7 @@
                   </VBox>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
-                        <JFXButton fx:id="boton" layoutX="100.0" layoutY="45.0" onAction="#sendStage" styleClass="boton" stylesheets="@../control/application.css" text="GET ME" textFill="WHITE">
-                           <tooltip>
-                              <Tooltip text="Do you know me?" />
-                           </tooltip></JFXButton>
+                        <JFXButton fx:id="boton" layoutX="100.0" layoutY="45.0" onAction="#sendStage" styleClass="boton" stylesheets="@../control/application.css" text="GET ME" textFill="WHITE" />
                      </children>
                   </AnchorPane>
                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">

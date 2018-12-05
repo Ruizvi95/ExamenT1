@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.jfoenix.controls.JFXButton;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -19,9 +20,16 @@ import javafx.scene.text.Font;
  * @author ruizv
  * @version 1.0
  * @see ControlFX
+ * 
+ * En esta aplicacion 
  */
+
+
 public class MainFX extends Application {
 	private AnchorPane mypane;
+	
+	@FXML
+	JFXButton boton;
 	
 	
 	@Override

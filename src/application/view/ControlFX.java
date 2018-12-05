@@ -4,14 +4,21 @@ import java.io.IOException;
 
 import com.jfoenix.controls.JFXButton;
 
+import javafx.animation.FadeTransition;
+import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Tooltip;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 public class ControlFX {
+	@FXML
+	ImageView imagen; 
+	
 	@FXML
 	JFXButton boton;
 	
@@ -20,6 +27,19 @@ public class ControlFX {
 	
 	
 	Stage stage;
+	
+	public void initialize() {
+		
+		
+		
+		
+		FadeTransition fadeTransition = new FadeTransition(
+				Duration.seconds(3), imagen);
+		fadeTransition.setFromValue(0);
+		fadeTransition.setToValue(1);
+		fadeTransition.play();
+
+	}
 	@FXML
 	public void sendStage(){
 		try {
@@ -55,4 +75,6 @@ public class ControlFX {
 		thisStage.close();
 	
 	}
+	
+	
 }
